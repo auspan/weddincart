@@ -1,0 +1,12 @@
+@font-face {
+	  font-family:"MyriadPro";
+  font-weight: normal;
+	src: url(../fonts/MyriadProRegular.otf), url(../fonts/MyriadProRegular.eot), url(../fonts/MyriadProRegular.svg), url(../fonts/MyriadProRegular.woff);
+}
+
+
+@font-face {
+	  font-family: "Swz721c";
+  font-weight: normal;
+	src: url(../fonts/Swz721c.ttf), url(../fonts/Swz721c.otf), url(../fonts/Swz721c.eot), url(../fonts/Swz721c.svg), url(../fonts/Swz721c.woff);
+}

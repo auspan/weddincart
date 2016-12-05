@@ -1,0 +1,10 @@
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+.metadata
+*.sublime*
+*.log
+.idea
+*.mp4
