@@ -37,6 +37,17 @@ class AppMailer {
         $this->deliver($recepients);
     }
 
+    public function sendEmailVerificationMail($data)
+    {
+        $recepients = $data['to'];
+        $this->data = $data;
+        $this->from = 'support@weddincart.com';
+        $this->subject = 'Welcome to WeddinCart - Please verify your email address';
+//        $this->subject = $data['subject'];
+        $this->view = "emails.welcome";
+        $this->deliver($recepients);
+    }
+
     public function deliver($recepients)
     {
         foreach ($recepients as $recepient) {

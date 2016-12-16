@@ -23,17 +23,24 @@
     <link rel="icon" type="image/png" href="images/favi.png" >
 
     <link rel="stylesheet" href="validations/css/validationEngine.jquery.css" />
+    <!-- bxSlider CSS file -->
+    <link href="js/bxslider/jquery.bxslider.css" rel="stylesheet"/>
 
     <link rel="stylesheet" type="text/css" href="datetimepicker-master/jquery.datetimepicker.css">
     <link href="css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/fileinput.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bxslider/jquery.min.js"></script>
+    <script src="js/bxslider/jquery.bxslider.min.js"></script>
+
+
 
 </head>
 
 <body   class="loginwrpbg">
 @include('home.afterLoginHeader')
-<div class="inner-header"><img src="images/inner-header.jpg"></div>
 
 @yield('content')
 

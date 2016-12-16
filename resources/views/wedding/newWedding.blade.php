@@ -2,6 +2,8 @@
 
 @section('content')
 
+    <div class="inner-header"><img src="images/inner-header.jpg"></div>
+
         <!--main content start here-->
 <section class="content ">
     <div class="container  white-tranbg">

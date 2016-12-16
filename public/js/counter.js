@@ -145,15 +145,4 @@
 })(jQuery);
 
 jQuery(document).ready(function() {
-				$('#countdown_dashboard').countDown({
-					targetDate: {
-						'day': 		14,
-						'month': 	2,
-						'year': 	2017,
-						'hour': 	22,
-						'min': 		0,
-						'sec': 		0,
-            'utc':    true
-          },
-				});
 			});

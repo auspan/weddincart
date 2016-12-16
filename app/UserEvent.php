@@ -18,7 +18,10 @@ class UserEvent extends Model
      *
      * @var array
      */
-    protected $fillable = ['event_id' , 'user_id' , 'created_by' , 'updated_by'];
+    protected $fillable = ['event_id', 'event_date', 'user_id' , 'created_by' , 'updated_by'];
+
+    protected $dates = ['event_date', 'created_at', 'updated_at'];
+
 
     public static function boot()
     {
@@ -28,6 +31,14 @@ class UserEvent extends Model
            $userEvent->token =str_random(30);
         });
     }
+
+    public function setEventDateAttribute($eventDate)
+    {
+        $format = 'd/m/Y';
+        $this->attributes['event_date'] = \Carbon::createFromFormat($format, $eventDate);
+    }
+
+
 
     // Relationships
 
@@ -88,7 +99,14 @@ class UserEvent extends Model
 
         $userEventAttributes['bride_name'] = splitname($userEventAttributes['bnm']);
         $userEventAttributes['groom_name'] = splitname($userEventAttributes['gnm']);
+        $userEventAttributes['wedding_day_of_week'] = $this->event_date->format('l');
+        $userEventAttributes['wedding_day_of_month'] = $this->event_date->format('j');
+        $userEventAttributes['wedding_day_of_month_suffix'] = $this->event_date->format('S');
+        $userEventAttributes['wedding_month_full'] = $this->event_date->format('F');
+        $userEventAttributes['wedding_month'] = $this->event_date->format('n');
+        $userEventAttributes['wedding_year'] = $this->event_date->format('Y');
 
+//        dd($userEventAttributes);
         return $userEventAttributes;
     }
 

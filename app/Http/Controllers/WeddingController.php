@@ -43,8 +43,10 @@ class WeddingController extends Controller {
     {
         $user = Auth::user();
         $weddingDetails = $this->getWeddingDetailsFromRequest($request);
-//        dd($weddingDetails);
-        $wedding = $user->createWedding();
+        $wedding = $user->createWedding($request->input('wedding_date'));
+//        dd($user);
+//        dd($wedding);
+
         $wedding->saveWeddingDetails($weddingDetails);
         return redirect('home');
     }

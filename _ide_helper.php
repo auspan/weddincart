@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.2.45 on 2016-09-01.
+ * Generated for Laravel 5.2.45 on 2016-12-16.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -12536,6 +12536,56 @@ namespace {
          */
         public static function cache($callback, $lifetime = null, $returnObj = false){
             return \Intervention\Image\ImageManager::cache($callback, $lifetime, $returnObj);
+        }
+        
+    }
+
+
+    class Indipay extends \Softon\Indipay\Facades\Indipay{
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function purchase($parameters = array()){
+            return \Softon\Indipay\Indipay::purchase($parameters);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function response($request){
+            return \Softon\Indipay\Indipay::response($request);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function prepare($parameters = array()){
+            return \Softon\Indipay\Indipay::prepare($parameters);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function process($order){
+            return \Softon\Indipay\Indipay::process($order);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function gateway($name){
+            return \Softon\Indipay\Indipay::gateway($name);
         }
         
     }
