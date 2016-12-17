@@ -127,7 +127,7 @@
     </div>
 </section>
 <!--main content end here-->
-<script src="js/bootstrap.min.js"></script>
+{{--<script src="js/bootstrap.min.js"></script>--}}
 <script type="text/javascript">
     $(document).ready(function(){
         $(window).scroll(function () {
@@ -167,7 +167,8 @@
 </script>
 
 <!--<script src="datetimepicker-master/jquery.js"></script>
---><script src="datetimepicker-master/jquery.datetimepicker.js"></script>
+-->
+    {{--<script src="datetimepicker-master/jquery.datetimepicker.js"></script>--}}
 <script>
 
 
@@ -201,7 +202,7 @@
 
 
     $("#file-3").fileinput({
-        showUpload: false,
+        showUpload: true,
         showCaption: false,
         browseClass: "btn btn-primary btn",
         fileType: "any",

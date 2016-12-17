@@ -30,10 +30,11 @@
     <link href="css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/fileinput.js" type="text/javascript"></script>
-    <script src="js/jquery.min.js"></script>
+    {{--<script src="js/jquery.min.js"></script>--}}
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bxslider/jquery.min.js"></script>
+    {{--<script src="js/bxslider/jquery.min.js"></script>--}}
     <script src="js/bxslider/jquery.bxslider.min.js"></script>
+    <script src="datetimepicker-master/jquery.datetimepicker.js"></script>
 
 
 
