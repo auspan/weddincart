@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Socialite;
 use Validator;
 use weddingcart\Http\Controllers\Controller;
+use weddingcart\Mailers\AppMailer;
 use weddingcart\User;
 
 class AuthController extends Controller
@@ -58,6 +59,33 @@ class AuthController extends Controller
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|confirmed|min:6',
         ]);
+    }
+
+
+    /**
+     * Handle a registration request for the application. (Overridden Trait method to support Email Verification
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function register(Request $request, AppMailer $mailer)
+    {
+        $validator = $this->validator($request->all());
+
+        if ($validator->fails()) {
+            $this->throwValidationException(
+                $request, $validator
+            );
+        }
+
+        $user = $this->create($request->all());
+//        Auth::guard($this->getGuard())->login($this->create($request->all()));
+
+        $mailer->sendVerificationMail($user);
+        session()->flash('message','An email has been sent to your email address.
+         Please check the mail and verify your email address to complete the registration process');
+//        return redirect($this->redirectPath());
+        return view('pages.registrationMessage');
     }
 
     /**
@@ -168,4 +196,12 @@ class AuthController extends Controller
         return $user;
     }
 
+    public function verifyEmail($token)
+    {
+        $user = User::whereVerificationToken($token)->firstOrFail()->verifyEmail();
+        // TODO: Flash mess confirming verification of Email address
+
+        // Redirect to Login Page
+        return view('auth.login');
+    }
 }

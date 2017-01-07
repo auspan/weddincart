@@ -16,26 +16,31 @@ class CreateUsersTable extends Migration {
 		{
 			$table->integer('id', true);
 			$table->string('name', 45)->nullable();
-			$table->string('email', 25)->unique('userEmail_UNIQUE');
+			$table->string('email', 25)->nullable()->unique('userEmail_UNIQUE');
 			$table->dateTime('date_of_birth')->nullable();
 			$table->integer('phone')->nullable();
 			$table->string('password', 60)->nullable();
             $table->string('facebook_id')->nullable();
             $table->string('google_id')->nullable();
-			$table->string('salt', 20)->nullable();
-			$table->boolean('is_active')->nullable();
-			$table->boolean('is_logged_in')->nullable();
+			$table->boolean('verified')->default(false);
+			$table->string('verification_token')->nullable();
+
+			$table->timestamps();
+			$table->rememberToken();
+			$table->integer('created_by')->nullable();
+			$table->integer('updated_by')->nullable();
+
+//			$table->string('salt', 20)->nullable();
+//			$table->boolean('is_active')->nullable();
+//			$table->boolean('is_logged_in')->nullable();
+
 			$table->date('last_login')->nullable();
 			$table->string('status', 45)->nullable();
 			$table->string('first_name', 45)->nullable();
 			$table->string('middle_name', 45)->nullable();
 			$table->string('last_name', 45)->nullable();
 			$table->text('about_user', 65535)->nullable();
-			$table->binary('picture', 65535)->nullable();
-			$table->timestamps();
-			$table->rememberToken();
-			$table->integer('created_by')->nullable();
-			$table->integer('updated_by')->nullable();
+//			$table->binary('picture', 65535)->nullable();
  		});
 	}
 

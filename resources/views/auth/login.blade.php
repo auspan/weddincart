@@ -3,6 +3,7 @@
 @section('content')
 
         <!--main content start here-->
+@include('errors.error')
 <section class="content ">
     <div class="container">
         <div class="row">

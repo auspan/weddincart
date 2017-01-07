@@ -42,6 +42,8 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('social/auth/{provider}', 'Auth\AuthController@handleProviderCallback');
     Route::get('weddingForm','WeddingController@create');
 
+    Route::get('register/verifyEmail/{verification_token}', 'Auth\AuthController@verifyEmail');
+
 //    Route::get('wedding','WeddingController@wedding');
 	Route::post('createWedding','WeddingController@save');
 //    Route::get('createWeddingEvent','WeddingController@createWeddingEvent');

@@ -10,6 +10,7 @@ namespace weddingcart\Mailers;
 
 
 use Illuminate\Mail\Mailer;
+use weddingcart\User;
 
 class AppMailer {
 
@@ -34,29 +35,35 @@ class AppMailer {
         $this->subject = 'Wedding Invitation';
         $this->subject = $data['subject'];
         $this->view = "emails.invite";
-        $this->deliver($recepients);
+        $this->deliver_many($recepients);
     }
 
-    public function sendEmailVerificationMail($data)
+    public function sendVerificationMail(User $user)
     {
-        $recepients = $data['to'];
-        $this->data = $data;
-        $this->from = 'support@weddincart.com';
-        $this->subject = 'Welcome to WeddinCart - Please verify your email address';
-//        $this->subject = $data['subject'];
+        $this->to = $user->email;
         $this->view = "emails.welcome";
-        $this->deliver($recepients);
+        $this->data = compact('user');
+        $this->from = 'support@weddincart.com';
+        $this->subject = 'Welcome to WeddinCart';
+//        $this->subject = $data['subject'];
+//        dd($recepients);
+        $this->deliver();
     }
 
-    public function deliver($recepients)
+    public function deliver()
+    {
+        $this->mailer->send($this->view, $this->data, function($message){
+            $message->from($this->from, 'WeddinCart Support')
+                ->to($this->to)
+                ->subject($this->subject);
+
+        });
+    }
+    public function deliver_many($recepients)
     {
         foreach ($recepients as $recepient) {
             $this->to = $recepient;
-        $this->mailer->send($this->view, $this->data, function($message){
-            $message->from($this->from, 'WeddinCart Invitation')
-                ->to($this->to)
-            ->subject($this->subject);
-        });
+            $this->deliver();
     }
     }
 }

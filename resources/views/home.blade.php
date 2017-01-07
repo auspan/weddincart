@@ -37,11 +37,11 @@
 	@yield('content')
 			<!-- Footer Scripts
 			=	============================================ -->
-	<script src="bxslider/jquery.min.js"></script>
-	<script src="bxslider/jquery.bxslider.min.js"></script>
+	<script src="js/bxslider/jquery.min.js"></script>
+	<script src="js/bxslider/jquery.bxslider.min.js"></script>
 
 	<!-- bxSlider CSS file -->
-	<link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<link href="js/bxslider/jquery.bxslider.css" rel="stylesheet" />
 	<script>
 		$(document).ready(function(){
 
