@@ -392,7 +392,7 @@ a {
 	border-radius: 50%
 }
 #testimonial div {
-	padding: 15px 30px;
+	padding: 15px 184px;
 }
 .testimonial-wrp {
 	background-image: url(../images/testimonialbg.jpg);
@@ -1113,7 +1113,7 @@ hr.style18:before {
 	cursor: pointer;
 }
 .white-tranbg {
-	background-color: rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0.3);
 }
 .create-wedding {
 	background-color: rgba(255,255,255,0.6);
@@ -1366,3 +1366,111 @@ background-color: rgba(167,19,19,0.8);    border-color: #b94242;
     background-color: #a71313;
     border-color: #a71313;
 }
+
+/*  =====================Pooja CSS======================  */
+
+#boxes .window {
+  position: fixed;
+  left:0;
+  top:0;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding-top:20px;
+  padding-bottom:20px;
+  border-radius: 0px;
+  text-align: center;
+}
+#boxes #dialog {
+      width: 464px;
+    height: 301px;
+    background-color: #d9d9d9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    padding-top: 1px !important;
+    border: solid #480000; 2px;
+}
+
+
+#lorem p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+  text-align: left;
+  padding: 11px;
+  
+}
+#lorem h3{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+  text-align: center;
+  color:#fff;
+  padding: 8px;
+  background-color:#740808;
+  
+}
+
+
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}  
+
+
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 0px !important;
+}
+
+.modal-content {
+    color: #000;
+    border: 2px solid #480000 !important;
+}
+.modal-header {
+    padding: 0px;
+    border-bottom: 0px !important;
+}
+ .register a{ text-decoration:none; text-align: center;}
+ .modal-body p {
+    font-size: 14px !important;
+	font-family: "Swz721c" !important;
+}
+.modal-dialog {
+    width: 430px !important;
+    margin: 70px auto !important;
+}
+.modal-header .close {
+    margin-top: -7px !important;}
+	.close{font-size: 30px !important;}
+	
+	
+	.btn2{display: inline-block;
+    padding: 6px 40px !important;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+	color:#fff;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius:0px !important;
+    background-color: #480000 !important;
+}
+.modal-body{padding-top:0px !important;}

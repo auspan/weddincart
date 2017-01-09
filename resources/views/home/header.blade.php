@@ -22,7 +22,7 @@
                 <div class="line-top"></div>
                 <nav class="navbar navbar-default ">
                     <div class="container">
-                        <div class="navbar-header"> <a class="navbar-brand" href="index.php"><img src="images/logo.png"></a>
+                        <div class="navbar-header"> <a class="navbar-brand" href="index.php"><img src="/images/logo.png"></a>
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">

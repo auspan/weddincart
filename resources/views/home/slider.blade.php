@@ -9,9 +9,9 @@
                 <h2> Make the list and ask for contribution. </h2>
 
 
-                <div class="sliderbtn"> <img src="images/left-icon.png"> &nbsp;&nbsp; <a href="register.php">
+                <div class="sliderbtn"> <img src="images/left-icon.png"> &nbsp;&nbsp; <a href="{{ url('/register') }}">
                         <button class="hvr-bounce-to-right">Start</button>
-                    </a> <a href="know-more.php">
+                    </a> <a href="{{ url('/faq') }}">
                         <button class="hvr-bounce-to-right">Know more</button>
                     </a> &nbsp;&nbsp; <img src="images/right-icon.png"> </div>
             </div>
@@ -22,9 +22,9 @@
 
 
                 <h2> Make the list and ask for contribution.  </h2>
-                <div class="sliderbtn"> <img src="images/left-icon.png"> &nbsp;&nbsp; <a href="register.php">
+                <div class="sliderbtn"> <img src="images/left-icon.png"> &nbsp;&nbsp; <a href="{{ url('/register') }}">
                         <button class="hvr-bounce-to-right">Start</button>
-                    </a> <a href="know-more.php">
+                    </a> <a href="{{ url('/faq') }}">
                         <button class="hvr-bounce-to-right">Know more</button>
                     </a> &nbsp;&nbsp; <img src="images/right-icon.png"> </div>
             </div>
@@ -35,9 +35,9 @@
 
 
                 <h2> Make the list and ask for contribution.  </h2>
-                <div class="sliderbtn"> <img src="images/left-icon.png"> &nbsp;&nbsp; <a href="register.php">
+                <div class="sliderbtn"> <img src="images/left-icon.png"> &nbsp;&nbsp; <a href="{{ url('/register') }}">
                         <button class="hvr-bounce-to-right">Start</button>
-                    </a> <a href="know-more.php">
+                    </a> <a href="{{ url('/faq') }}">
                         <button class="hvr-bounce-to-right">Know more</button>
                     </a> &nbsp;&nbsp; <img src="images/right-icon.png"> </div>
             </div>

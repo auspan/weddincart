@@ -2,7 +2,6 @@
 
 <!-- Footer -->
 <footer class="">
-
     <div class="container">
         <div class="row">
             <div class="col-sm-3"> </div>
@@ -10,9 +9,9 @@
                 <div class="footer_nav">
                     <ul>
                         <li><a href="#" class="bdr-leftnone">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="{{ url('/about') }}">About</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#"> FAQ’s </a></li>
+                        <li><a href="{{ url('/faq') }}#faq-section"> FAQ’s </a></li>
                         <li><a href="#"> Terms of use</a></li>
                         <li><a href="#"> Sitemap</a></li>
                     </ul>
@@ -46,7 +45,7 @@
             <div class="col-sm-12">
                 <div class="footer-line "></div>
                 <div class="bottom clearfix">
-                    <div class="copyright"> Copyrights © 2016 All Rights Reserved by WeddinCart.      &nbsp;<a href="#"> Design by RAJMITH <img src="images/rajmith.png"></a> </div>
+                    <div class="copyright"> Copyrights © 2016 All Rights Reserved by WeddinCart.      &nbsp;<a href="#"> Design by RAJMITH <img src="/images/rajmith.png"></a> </div>
                     <!-- end copyright -->
                 </div>
                 <!-- end bottom -->
