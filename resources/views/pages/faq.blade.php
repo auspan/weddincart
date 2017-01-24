@@ -1,4 +1,4 @@
-<h2 >FAQ 1</h2>
+<h2 >FAQ</h2>
 <hr id="faq-section" class="style2">
 
 <div  class="row">
