@@ -75,7 +75,7 @@
             <div class="col-md-4">
 
                 <div class="register">
-                    <a href="know-more.php#faqs"><h3>Want to know more?</h3></a>
+                    <a href="{{ url('/faq') }}#faq-section"><h3>Want to know more?</h3></a>
                 </div>
 
             </div>
