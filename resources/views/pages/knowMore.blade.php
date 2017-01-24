@@ -25,7 +25,7 @@
 
     <!-- External JavaScripts
     ============================================= -->
-    {{--<script type="text/javascript" src="js/jquery.js"></script>--}}
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     {{--<script type="text/javascript" src="js/plugins.js"></script>--}}
     {{--<script type="text/javascript" src="js/datepicker.js"></script>--}}
 
