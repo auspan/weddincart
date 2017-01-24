@@ -26,6 +26,7 @@
     <!-- External JavaScripts
     ============================================= -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     {{--<script type="text/javascript" src="js/plugins.js"></script>--}}
     {{--<script type="text/javascript" src="js/datepicker.js"></script>--}}
 
@@ -84,5 +85,14 @@
             });
         });
     </script>
+
+    <script>
+        setTimeout(function(){
+            $('#overlay').modal('show');
+        }, 8000)
+
+        $('#overlay').modal('hide');
+    </script>
+
 </body>
 </html>
