@@ -21,10 +21,12 @@ class AppMailer {
     protected $view;
     protected $subject;
     protected $data = [];
+    protected $logoImagePath;
 
     public function __construct(Mailer $mailer)
     {
         $this->mailer = $mailer;
+        $this->logoImagePath = public_path()."/images/logo.png";
     }
 
     public function sendInviteEmail($data)
@@ -43,6 +45,7 @@ class AppMailer {
         $this->to = $user->email;
         $this->view = "emails.welcome";
         $this->data = compact('user');
+        $this->data['logoImagePath'] = $this->logoImagePath;
         $this->from = 'support@weddincart.com';
         $this->subject = 'Welcome to WeddinCart';
 //        $this->subject = $data['subject'];

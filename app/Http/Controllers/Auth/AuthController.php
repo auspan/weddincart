@@ -82,8 +82,8 @@ class AuthController extends Controller
 //        Auth::guard($this->getGuard())->login($this->create($request->all()));
 
         $mailer->sendVerificationMail($user);
-        session()->flash('message','An email has been sent to your email address.
-         Please check the mail and verify your email address to complete the registration process');
+//        session()->flash('message','An email has been sent to your email address.
+//         Please check the mail and verify your email address to complete the registration process');
 //        return redirect($this->redirectPath());
         return view('pages.registrationMessage');
     }
