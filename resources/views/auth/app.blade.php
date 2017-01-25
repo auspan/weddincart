@@ -20,6 +20,12 @@
     <link rel="icon" type="image/png" href="/images/favi.png" >
 
     <link rel="stylesheet" href="/validations/css/validationEngine.jquery.css" />
+
+    <!-- External JavaScripts
+ ============================================= -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 </head>
 <body class="loginwrpbg">
     @include('home.header')
