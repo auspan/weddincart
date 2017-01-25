@@ -11,7 +11,8 @@ body {
     text-align: center;
 }
 
-.regbtnmain button{
+.regbtnmain button,
+.regbtnmain a{
 	background-color: #480000;
     border: medium none;
     border-radius: 0;
@@ -631,7 +632,7 @@ ul.mtree.bubba li.mtree-active > a {
 	background: #dbdada;
 	color: #FFF;
 }
-dbdada ul.mtree.bubba a {
+ul.mtree.bubba a {
 	padding: 7px 0px 7px 1em;
 }
 ul.mtree.bubba li li > a {

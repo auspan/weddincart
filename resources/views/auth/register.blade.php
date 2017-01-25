@@ -37,8 +37,10 @@
                                 </div>
 
 
-                                <div style="margin-bottom: 25px" class="input-group"><span class="input-group-addon"><i
-                                                class="glyphicon glyphicon-th-list"></i></span>
+                                <div style="display: none; margin-bottom: 25px" class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-th-list"></i>
+                                    </span>
                                     <select type="text" id="Categories" class="form-control validate[required]"
                                             role="multiselect">
                                         <option value="0" selected="selected">Select Categories</option>

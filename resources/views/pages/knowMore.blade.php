@@ -49,8 +49,8 @@
 
     <div class="container">
         <div class="regbtnmain">
-            <button onclick="window.location.href='{{ url('\register') }}'" class="center-block hvr-bounce-to-right">Register Now
-            </button>
+            <a href='{{ url('\register') }}' class="center-block hvr-bounce-to-right">Register Now
+            </a>
         </div>
     </div>
 
