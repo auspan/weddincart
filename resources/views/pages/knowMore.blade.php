@@ -49,7 +49,7 @@
 
     <div class="container">
         <div class="regbtnmain">
-            <a href='{{ url('\register') }}' class="center-block hvr-bounce-to-right">Register Now
+            <a href='{{ url('register') }}' class="center-block hvr-bounce-to-right">Register Now
             </a>
         </div>
     </div>
