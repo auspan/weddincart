@@ -42,6 +42,8 @@
         <div class="container white-tranbg">
             <div class="row">
                 @include('pages.knowMoreText')
+            </div>
+            <div class="row" id="faq-section" style="margin-top: -80px">
                 @include('pages.faq')
             </div>
         </div>

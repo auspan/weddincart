@@ -1,5 +1,7 @@
-<h2 >FAQ</h2>
-<hr id="faq-section" class="style2">
+<div class="col-md-12">
+    <h2 >FAQ</h2>
+    <hr class="style2">
+</div>
 
 <div  class="row">
     <div class="col-md-12">
