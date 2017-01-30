@@ -22,7 +22,7 @@
                 <div class="line-top"></div>
                 <nav class="navbar navbar-default ">
                     <div class="container">
-                        <div class="navbar-header"> <a class="navbar-brand" href="index.php"><img src="/images/logo.png"></a>
+                        <div class="navbar-header"> <a class="navbar-brand" href="/"><img src="/images/logo.png"></a>
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
@@ -30,7 +30,9 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li <?php if($base=='about.php' ){?>class="active" <?php } ?>><a href="{{ url('/about') }}" >About</a></li>
                                 <li <?php if($base=='know-more.php' ){?>class="active" <?php } ?>><a href="{{ url('/faq') }}#faq-section">FAQ</a></li>
-                                <li  <?php if($base=='login.php' ){?>class="active" <?php } ?>><a href="{{ url('/login') }}" > Sign In</a></li>
+                                <li  <?php if($base=='login.php' ){?>class="active" <?php } ?>>
+                                    <a href="{{ url('/login') }}" > Sign In</a>
+                                </li>
                                 <li  <?php if($base=='register.php' ){?>class="active" <?php } ?>><a href="{{ url('/register') }}" >Register</a></li>
                             </ul>
                         </div>
