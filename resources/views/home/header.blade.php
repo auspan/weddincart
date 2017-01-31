@@ -26,14 +26,15 @@
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
-                            <?php  $base=basename($_SERVER['PHP_SELF']); ?>
+                            <?php  $base=basename($_SERVER['REQUEST_URI']);?>
                             <ul class="nav navbar-nav navbar-right">
-                                <li <?php if($base=='about.php' ){?>class="active" <?php } ?>><a href="{{ url('/about') }}" >About</a></li>
-                                <li <?php if($base=='know-more.php' ){?>class="active" <?php } ?>><a href="{{ url('/faq') }}#faq-section">FAQ</a></li>
-                                <li  <?php if($base=='login.php' ){?>class="active" <?php } ?>>
-                                    <a href="{{ url('/login') }}" > Sign In</a>
+                                {{--<li><?php echo $base ?></li>--}}
+                                <li <?php if($base=='about' ){?>class="active" <?php } ?>><a href="{{ url('/about') }}" >About</a></li>
+                                <li <?php if($base=='faq' ){?>class="active" <?php } ?>><a href="{{ url('/faq') }}#faq-section">FAQ</a></li>
+                                <li  <?php if($base=='login' ){?>class="active" <?php } ?>>
+                                    {{--<a href="{{ url('/login') }}" > Sign In</a>--}}
                                 </li>
-                                <li  <?php if($base=='register.php' ){?>class="active" <?php } ?>><a href="{{ url('/register') }}" >Register</a></li>
+                                <li  <?php if($base=='register' ){?>class="active" <?php } ?>><a href="{{ url('/register') }}" >Register</a></li>
                             </ul>
                         </div>
                     </div>
